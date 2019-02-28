@@ -3,3 +3,23 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 
 */
+.header {
+  background: #27273e;
+}
+
+.contacts__phone {
+  font-weight: bold;
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts__phone:hover {
+  text-decoration: none;
+}
+
+.contacts__dropdown {
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: bold;
+}
