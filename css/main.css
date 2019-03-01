@@ -23,3 +23,30 @@ font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
+
+.breadcrumps, .team {
+  list-style: none;
+}
+
+breadcrums_link {
+  color: #492b3a;
+}
+
+.breadcrumps__item:last-child .breadcrums_slash {
+  display: none;
+}
+
+.breadcrumps__link--active {
+  color: pink;
+  text-decoration: none;
+}
+
+.team__avatar-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.team__avatar {
+
+}
