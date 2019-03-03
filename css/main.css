@@ -3,10 +3,34 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 
 */
+
+body {
+  line-height: 1.42;
+}
 .header {
   background: #27273e;
+  margin-bottom: 53px;
 }
 
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.contacts {
+  display: inline-block;
+  vertical-align: top;
+}
 .contacts__phone {
   font-weight: bold;
   font-size: 21px;
@@ -19,19 +43,45 @@ font-family: 'Roboto', sans-serif;
 }
 
 .contacts__dropdown {
-  color: #2b2b2b;
+  color: rgb(226, 26, 26);
   font-size: 14px;
   font-weight: bold;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.header__col {
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.header__col--right-aligned {
+  text-align: right;
+}
 .breadcrumps, .team {
   list-style: none;
 }
+.breadcrumps {
+  margin-bottom: 35px;
+}
 
-breadcrums_link {
+.breadcrums_link {
   color: #492b3a;
 }
 
+.breadcrumps__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.breadcrums_slash {
+  display: inline-block;
+  vertical-align: middle;
+}
 .breadcrumps__item:last-child .breadcrums_slash {
   display: none;
 }
@@ -39,6 +89,57 @@ breadcrums_link {
 .breadcrumps__link--active {
   color: pink;
   text-decoration: none;
+}
+
+.route__picture {
+  width: 880px;
+  height: 354px;
+  background: url('/images/content/Layer6.jpg') no-repeat;
+  color: pink;
+  padding: 70px 0 0 70px;
+  //background-size: contain;
+}
+
+.maincontent__content, .maincontent__sidebar {
+  float: left;
+}
+
+.maincontent__content {
+  width: 70%;
+  margin-right: 5%;
+}
+
+.maincontent__sidebar{
+  width: 25%;
+}
+
+.nav_item {
+  margin-bottom: 10px;
+}
+
+.nav__link {
+  font-size: 12px;
+  color: red;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+}
+.nav__link:before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  background: url('/images/decor/main_icon.png') center center no-repeat; 
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.nav__link:hover {
+color: #aaaaaa;
+}
+
+.nav__link:hover:before {
+  background-image: url('/images/decor/feed_icon.png')
 }
 
 .team__avatar-pic {
@@ -50,3 +151,4 @@ breadcrums_link {
 .team__avatar {
 
 }
+
